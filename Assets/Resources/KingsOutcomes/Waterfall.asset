@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f32992a4b89c64486c3025a005e3ab, type: 3}
+  m_Name: Waterfall
+  m_EditorClassIdentifier: 
+  outcomeName: Water fall!!!
+  outcomeDescription: Everyone begins to drink. The person who drew this card is the
+    first person to stop drinking, all other players must continue drinking longer
+    than the player to your right
+  outcomeImage: {fileID: 21300000, guid: 55391c452c811a34c8dd0670f4067ff7, type: 3}
