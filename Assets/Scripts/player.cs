@@ -3,27 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public class player : MonoBehaviour {
 
-	Jun_TweenRuntime tu;
-	public Text nameText;
-	string playerName = "Player";
+    public playerManager.sexes sex;
+    public playerManager.sexes preference;
 
-	public enum gender { male, female, both };
+    public string playerName = "Player";
 
-	public gender playerGender;
-	public gender playerInterest;
-
-	private void Awake()
-	{
-		nameText.text = playerName;
-	}
+    public player() {
+        sex = playerManager.sexes.male;
+        preference = playerManager.sexes.female;
+    }
 
 	public void setName(string _name) {
 		if (_name == null || playerName == "")
 			return;
 
 		playerName = _name;
-		nameText.text = playerName;
 	}
 }
