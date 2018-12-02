@@ -36,4 +36,8 @@ public class playerManager : MonoBehaviour {
         uiElement.setText("Player " + players.Count);
         uiElement.initialize();
 	}
+
+    public void removePlayer(player pl) {
+        players.Remove(pl);
+    }
 }

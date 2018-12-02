@@ -68,4 +68,9 @@ public class playerUIElement : MonoBehaviour {
     public void setText(string val) {
         playerO.setName(val);
     }
+
+    public void removePlayer() {
+        playerManager.instance.removePlayer(playerO);
+        Destroy(this.gameObject);
+    }
 }

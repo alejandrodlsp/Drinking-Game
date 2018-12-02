@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9275f435ea6d037498e08097cb3699c5, type: 3}
   m_Name: Main
   m_EditorClassIdentifier: 
-  gameName: BOMB DRINK
-  description: A drinking game by Alex Santos
+  gameName: GAME TITLE
+  description: A Game Subtitle
   maxPlayers: 0
   minPlayers: 0
