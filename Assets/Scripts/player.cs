@@ -1,19 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 [System.Serializable]
-public class player : MonoBehaviour {
+public class player {
 
     public playerManager.sexes sex;
     public playerManager.sexes preference;
 
+    public int skipped = 0;
+    public int completed = 0;
+
+    public int playerId = 0;
+    private static int currentGlobalId = 0;
+
     public string playerName = "Player";
 
     public player() {
-        sex = playerManager.sexes.male;
+        playerId += currentGlobalId;
+        currentGlobalId++;
+
+        playerName = "Player";
         preference = playerManager.sexes.female;
+        sex = playerManager.sexes.male;
     }
 
 	public void setName(string _name) {

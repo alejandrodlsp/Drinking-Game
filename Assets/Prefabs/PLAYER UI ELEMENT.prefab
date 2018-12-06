@@ -716,11 +716,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_OnValueChanged:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114965063117813402}
         m_MethodName: setText
@@ -733,6 +728,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -1324,7 +1324,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53285e7bc6a05d34da7b5e297376abe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerO: {fileID: 0}
+  playerO:
+    sex: 0
+    preference: 1
+    skipped: 0
+    completed: 0
+    playerId: 1
+    playerName: Player
   inText: {fileID: 114280320379069396}
   malSex: {fileID: 114124229292124610}
   femSex: {fileID: 114407963627742200}
@@ -1877,7 +1883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28.1, y: -17.510002}
+  m_AnchoredPosition: {x: -18.869995, y: -17.510002}
   m_SizeDelta: {x: 37.73999, y: 35.020004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224710158270332264

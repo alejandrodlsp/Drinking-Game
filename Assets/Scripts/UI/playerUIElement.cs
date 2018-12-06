@@ -47,30 +47,32 @@ public class playerUIElement : MonoBehaviour {
             malPref.color = selectedColor;
             femPref.color = unselectedColor;
             biPref.color = unselectedColor;
-            playerO.sex = playerManager.sexes.male;
+            playerO.preference = playerManager.sexes.male;
         }
         else if (i == 1)
         {
             malPref.color = unselectedColor;
             femPref.color = selectedColor;
             biPref.color = unselectedColor;
-            playerO.sex = playerManager.sexes.female;
+            playerO.preference = playerManager.sexes.female;
         }
         else
         {
             malPref.color = unselectedColor;
             femPref.color = unselectedColor;
             biPref.color = selectedColor;
-            playerO.sex = playerManager.sexes.both;
+            playerO.preference = playerManager.sexes.both;
         }
     }
 
     public void setText(string val) {
+        if (val == "" || val == null)
+            val = inText.text;
         playerO.setName(val);
     }
 
     public void removePlayer() {
-        playerManager.instance.removePlayer(playerO);
+        playerManager.instance.players.Remove(playerO);
         Destroy(this.gameObject);
     }
 }

@@ -36,7 +36,7 @@ public class kings : MonoBehaviour {
 
 		runtime.Play();
 		int index = Random.Range(0, outcomes.Length + 1);
-		if (index == outcomes.Length && Random.Range(0,1) == 1)
+		if (index >= outcomes.Length)
 		{
 			quizAnswered = true;
 			outcomeTitle.text = "Quiz!";
