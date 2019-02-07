@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 224073034638346378}
   - component: {fileID: 222470392344685740}
   - component: {fileID: 114941672559343826}
+  - component: {fileID: 114293688854693432}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -334,6 +335,7 @@ GameObject:
   - component: {fileID: 224710158270332264}
   - component: {fileID: 222299027033443744}
   - component: {fileID: 114991457738404954}
+  - component: {fileID: 114044614128059120}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -404,6 +406,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114044614128059120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880383303685152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7208152d72fd9489b25486b2d930fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationKey: players_sex
 --- !u!114 &114064240062882894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -742,6 +756,18 @@ MonoBehaviour:
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
+--- !u!114 &114293688854693432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752251422824160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7208152d72fd9489b25486b2d930fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationKey: players_preference
 --- !u!114 &114407963627742200
 MonoBehaviour:
   m_ObjectHideFlags: 1

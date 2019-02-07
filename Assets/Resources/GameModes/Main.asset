@@ -11,7 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9275f435ea6d037498e08097cb3699c5, type: 3}
   m_Name: Main
   m_EditorClassIdentifier: 
-  gameName: PARTY GAMES
-  description: A collection of drinking games
+  gameName:
+  - PARTY GAMES
+  - PARTY GAMES
+  description:
+  - A collection of drinking games
+  - Una coleccion de juegos para fiestas.
   maxPlayers: 0
   minPlayers: 0

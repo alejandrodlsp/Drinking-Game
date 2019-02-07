@@ -11,7 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9275f435ea6d037498e08097cb3699c5, type: 3}
   m_Name: truthOrDare
   m_EditorClassIdentifier: 
-  gameName: Truth or Dare
-  description: 
+  gameName:
+  - TRUTH OR DARE
+  - VERDAD O ATREVIMIENTO
+  description:
+  - 
+  - 
   maxPlayers: 0
   minPlayers: 2

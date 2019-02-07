@@ -1,0 +1,29 @@
+ESP_TRANSLATIONS
+title=PARTY GAMES
+subtitle=Una coleccion de juegos para beber.
+menu_kings=KINGS
+menu_truthOrDare=VERDAD O ATREVIMIENTO
+menu_neverHaveIEver=NUNCA HE
+menu_mostLikely=EL MAS PROBABLE
+submenu_players=JUGADORES
+submenu_about=ACERCA DE
+about_title=ACERCA DE
+about_text=Party Games, por Alejandro de los Santos. \nalejandropsld@gmail.com\n@alejandrodlsp\n\nImagenes de game-icons.nesubtitle=Una coleccion de juegos para beber
+language=IDIOMA
+notEnoughPlayers=NO HAY SUFICIENTES JUGADORES
+notEnoughPlayers1=Hacen falta 
+notEnoughPlayers2= jugadores para jugar.
+kings_nextTurn=HAZ CLICK PARA EL SIGUIENTE TURNO
+neverHave_title=Nunca he...
+neverHave_nextSpicy=PREGUNTA PICANTE
+neverHave_nextMild=PREGUNTA NORMAL
+mostLikely_next=SIGUIENTE
+mostLikely_title=El mas probable que...
+players_new=NUEVO JUGADOR
+players_sex=SEXO
+players_preference=PREFERENCIA
+truthOrDare_skip=SALTAR
+truthOrDare_complete=COMPLETADO
+truthOrDare_truth=VERDAD
+truthOrDare_dare=ATREVIMIENTO
+truthOrDare_intensity=Intensidad:

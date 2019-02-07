@@ -1,0 +1,27 @@
+ENG_TRANSLATIONS
+title=PARTY GAMES
+subtitle=A collection of drinking games
+menu_kings=KINGS
+menu_truthOrDare=TRUTH OR DARE
+menu_neverHaveIEver=NEVER HAVE I EVER
+menu_mostLikely=MOST LIKELY TO
+submenu_players=PLAYERS
+submenu_about=ABOUT
+about_title=ABOUT
+about_text=Party Games, by Alejandro de los Santos. \nalejandropsld@gmail.com\n@alejandrodlsp\n\nAssets from game-icons.net
+language=LANGUAGE
+notEnoughPlayers=NOT ENOUGH PLAYERS
+notEnoughPlayers1=You need at least 
+notEnoughPlayers2= players to play this
+kings_nextTurn=CLICK THE BOX FOR NEXT TURN
+neverHave_title=Never have I ever...
+neverHave_nextSpicy=SPICY QUESTION
+neverHave_nextMild=MILD QUESTION
+mostLikely_next=NEXT
+mostLikely_title=Most likely to...
+players_new=NEW PLAYER
+players_sex=SEX
+players_preference=PREFERENCE
+truthOrDare_skip=SKIP
+truthOrDare_complete=COMPLETE
+truthOrDare_intensity=Intensity:

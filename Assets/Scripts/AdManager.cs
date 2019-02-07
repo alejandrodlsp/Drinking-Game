@@ -32,7 +32,6 @@ public class AdManager : MonoBehaviour {
         if (PlayerPrefs.HasKey("videoBufferCount"))
         {
             videoBufferCount = PlayerPrefs.GetInt("videoBufferCount");
-            Debug.Log(videoBufferCount);
         }
         else
         {

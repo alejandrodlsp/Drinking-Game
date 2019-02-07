@@ -11,7 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9275f435ea6d037498e08097cb3699c5, type: 3}
   m_Name: mostLikelyTo
   m_EditorClassIdentifier: 
-  gameName: Most likely to...
-  description: Vote whoever is most likely to do this, they drink!
+  gameName:
+  - MOST LIKELY TO
+  - MOST LIKELY TO
+  description:
+  - Vote whoever is most likely to do this, they drink!
+  - Votad quien tiene mas posibilidades de hacer esto, ellos beben!
   maxPlayers: 0
   minPlayers: 0

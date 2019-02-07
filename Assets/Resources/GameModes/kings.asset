@@ -11,7 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9275f435ea6d037498e08097cb3699c5, type: 3}
   m_Name: kings
   m_EditorClassIdentifier: 
-  gameName: Kings
-  description: Take turns to draw a card. Do whatever it says
+  gameName:
+  - Kings
+  - Reyes
+  description:
+  - Take turns to draw a card. Do whatever it says
+  - Tomad turnos para sacar una carta. Haz lo que pone
   maxPlayers: 0
   minPlayers: 0

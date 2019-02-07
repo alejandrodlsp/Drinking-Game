@@ -11,7 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9275f435ea6d037498e08097cb3699c5, type: 3}
   m_Name: Player Creation
   m_EditorClassIdentifier: 
-  gameName: PLAYERS
-  description: Add, remove and edit players.
+  gameName:
+  - PLAYERS
+  - JUGADORES
+  description:
+  - Add, remove and edit players.
+  - "A\xF1ade, borra y edita jugadores."
   maxPlayers: 0
   minPlayers: 0

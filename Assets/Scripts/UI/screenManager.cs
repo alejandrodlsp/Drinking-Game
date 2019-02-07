@@ -10,10 +10,12 @@ public class screenManager : MonoBehaviour {
 	public static screenManager instance;
 	private void Awake()
 	{
+        languageManager.instance.onLanguageChange = changeTitle;
+
 		if (instance == null)
 		{
 			instance = this;
-			DontDestroyOnLoad(this.gameObject);
+			DontDestroyOnLoad(gameObject);
 		}
 		else
 			Destroy(this);
@@ -32,6 +34,10 @@ public class screenManager : MonoBehaviour {
 	int currentScreen = 0;
 	private bool first = true;
 
+    public void changeTitle() {
+        titleText.changeTitle(screens[currentScreen].gameMode, currentScreen, false);  // CHANGE TITLE
+    }
+
 	public void loadScreen(int index) {
         if (currentScreen == index && !first)
             return;
@@ -42,7 +48,7 @@ public class screenManager : MonoBehaviour {
         if(!first)
         if (screens[index].gameMode.minPlayers > playerManager.instance.players.Count)
         {
-            popup.instance.openPopup("Not enough players", "You need at least " + screens[index].gameMode.minPlayers + " players to play");
+            popup.instance.openPopup(languageManager.instance.Translations["notEnoughPlayers"], languageManager.instance.Translations["notEnoughPlayers1"] + screens[index].gameMode.minPlayers + languageManager.instance.Translations["notEnoughPlayers2"]);
             return;
         }
 
@@ -56,8 +62,11 @@ public class screenManager : MonoBehaviour {
 
         if (!first)
         {       // IF NOT THE FIRST LOAD SCREEN, THEN 
-            titleText.changeTitle(screens[currentScreen].gameMode, currentScreen);  // CHANGE TITLE
+            titleText.changeTitle(screens[currentScreen].gameMode, currentScreen, true);  // CHANGE TITLE
             first = false;
+        }
+        else {
+            titleText.changeTitle(screens[currentScreen].gameMode, currentScreen, false);
         }
     }
 
@@ -70,7 +79,4 @@ public class screenManager : MonoBehaviour {
 		}
 	}
 
-    public void aboutPopup() {
-        popup.instance.openPopup("ABOUT", "Party Games, by Alejandro de los Santos. \nalejandropsld@gmail.com\n@alejandrodlsp\n\nAssets from game-icons.net");
-    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fileManager : MonoBehaviour {
 
-	public string filename = "";
+	public string[] filenames;
 	string textContent;
 
 	private string[] values;
@@ -13,20 +13,20 @@ public class fileManager : MonoBehaviour {
 	public void Start()
 	{
 		readFile();
+        languageManager.instance.onLanguageChange += readFile;
 	}
 
-	private string[] readFile() {
+	public void readFile() {
 		usedIndices.Clear();
 
-		TextAsset txtAssets = (TextAsset)Resources.Load(filename, typeof(TextAsset));
+		TextAsset txtAssets = (TextAsset)Resources.Load(filenames[languageManager.instance.language], typeof(TextAsset));
 		textContent = txtAssets.text;
 		values = textContent.Split('\n');
-		return values;
 	}
 
 	public string getRandomLine() {
-		if (values == null)
-			values = readFile();
+        if (values == null)
+            readFile();
 
 		int index = -1;
 		do
